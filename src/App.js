@@ -56,7 +56,7 @@ import Header from "./components/Header/Header";
 import SideNav from "./components/SideNav/SideNav";
 import Project from "./pages/ACFCOVERVIEW/Project";
 
-import OnboardingAccesss from "./pages/ACFCOVERVIEW/OnboardingAccess";
+
 
 import Edoprod from "./pages/Project_TRack/Edoprod";
 
@@ -68,8 +68,10 @@ import MavericksTrain from "./pages/Mavericks/MavericksTrain";
 import Login from "./pages/Login";
 
 import Navbar from "./components/Header/Header";
-import Deep from "./pages/Deep Dive Session/Deep";
+import Deep, { Example } from "./pages/Deep Dive Session/Deep";
 import Domainnew from "./pages/Domain Foundation/Domainnew";
+import AdminDashboard from "./pages/Admin/AdminDashboard";
+
 
 
 export default function App() {
@@ -80,7 +82,7 @@ export default function App() {
         <Route path="/" element={<Login />} />
         <Route path="/dashboard" element={<SideNav />}> 
         <Route path="/dashboard/project" element={<Project />} />
-          <Route path="/dashboard/onboardingAccess" element={<OnboardingAccesss />} />
+         
 
           
           <Route path="/dashboard/domainnew" element={<Domainnew />} />
@@ -93,9 +95,14 @@ export default function App() {
           <Route path="/dashboard/mavericksTrain" element={<MavericksTrain />} />
 
           <Route path="/dashboard/deep" element={<Deep />} />
+        
+          
         </Route>
+        <Route path="/admin-dashboard" element={<AdminDashboard />} />
+
       </Routes>
     </BrowserRouter>
+    
   );
 }
 

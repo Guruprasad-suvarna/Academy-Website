@@ -1,0 +1,155 @@
+.scrollable-page {
+  width:500%;
+  height: 100vh;
+  overflow-y: auto; /* Enable vertical scrollbar */
+  padding: 20px; /* Add padding to prevent content from sticking to edges */
+  margin-top: -720px;
+  margin-left: 200px;
+}
+
+
+.deep-html,
+.deep-body {
+  padding: 0px;
+  margin: 0px;
+  background: #ffffff;
+  font-family: 'Karla', sans-serif;
+  width: 100vw;
+}
+
+.deep-body * {
+  margin: 0;
+  padding: 0;
+}
+
+.deep-nav ul li {
+  position: relative;
+  display: block;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.deep-nav ul li > ul {
+  position: absolute;
+  pointer-events: none;
+}
+
+.deep-nav > ul {
+  display: flex;
+}
+
+.deep-nav > ul > li {
+  pointer-events: all;
+  opacity: 1;
+}
+
+.deep-nav ul li ul li a {
+  white-space: nowrap;
+  display: block;
+  background: #3879b3 !important; /* New background color */
+  color: #fdfbfb !important; /* Text color */
+  transition: background 0.3s, color 0.3s; /* Smooth transition */
+ 
+}
+
+
+
+
+.deep-nav ul li:hover > ul {
+  
+  pointer-events: initial;
+  opacity: 1;
+}
+
+.deep-nav ul li:hover > ul > li,
+.deep-nav ul:hover > li {
+  opacity: 1;
+  
+}
+
+.deep-nav ul ul li ul {
+  transform: translateX(100%);
+  top: 0;
+  right: 0;
+}
+
+.deep-nav {
+  margin-top: 40px;
+  margin-left: 40px;
+}
+
+.deep-nav a {
+  background: #3879b3;
+  color: #FFF;
+  min-width: 190px;
+  transition: background 0.5s, color 0.5s, transform 0.5s;
+  margin: 0px 6px 6px 0px;
+  padding: 20px 40px;
+  box-sizing: border-box;
+  border-radius: 40px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+/* New rule to change the background color of submenu items
+.deep-nav ul li ul li a {
+  background: #3879b3; /* Change this to your desired color */
+/* }  */
+
+.deep-nav a:hover:before {
+  
+  content: '';
+  top: 0;
+  left: 0;
+  position: absolute;
+  
+  width: 100%;
+  height: 100%;
+}
+
+.deep-nav > ul > li > a + ul:after {
+  background: #3879b3;
+  content: '';
+  position: absolute;
+  border: 10px solid transparent;
+  border-top: 10px solid white;
+  left: 0px;
+  top: 0px;
+}
+
+.deep-nav ul li ul li > a + ul:after {
+ 
+  content: '';
+  position: absolute;
+  border: 10px solid transparent;
+  border-left: 10px solid rgb(10, 10, 10);
+  top: 32px;
+  left: -30px;
+  transition: opacity 0.6s, transform 0s;
+}
+
+.deep-nav > ul > li > ul > li {
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+  
+}
+
+.deep-nav > ul > li:hover > ul > li,
+.deep-nav > ul > li.hover > ul > li {
+  opacity: 1;
+  
+}
+
+.deep-nav ul li ul li ul > li {
+  opacity: 0;
+  transition: opacity 0.6s ease-in-out;
+}
+
+.deep-nav ul li ul li:hover > ul > li,
+.deep-nav ul li ul li.hover > ul > li {
+  opacity: 1;
+}
+
+/* .deep-nav {
+  margin-top: -650px;
+  margin-left: 250px;
+} */

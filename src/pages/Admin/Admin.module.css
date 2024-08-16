@@ -1,0 +1,209 @@
+.adminDashboard {
+  display: flex;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #333;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.sidebar button {
+  background-color: #555;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px 0;
+  width: 90%;
+  cursor: pointer;
+}
+
+.sidebar button:hover {
+  background-color: #777;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+.addUserForm, .userList, .userDetails {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.addUserForm h3, .userList h3, .userDetails h3 {
+  margin-top: 0;
+}
+
+.addUserForm input, .addUserForm button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.addUserForm button {
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+}
+
+.addUserForm button:hover {
+  background-color: #555;
+}
+
+.userList ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.userList li {
+  background-color: #f9f9f9;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.userList li button {
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.userList li button:hover {
+  background-color: #c9302c;
+}
+
+.userDetails p {
+  margin: 5px 0;
+}
+
+
+.adminDashboard {
+  display: flex;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #333;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.sidebar button {
+  background-color: #555;
+  color: white;
+  border: none;
+  padding: 10px;
+  margin: 5px 0;
+  width: 90%;
+  cursor: pointer;
+}
+
+.sidebar button:hover {
+  background-color: #777;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+.message {
+  background-color: #dff0d8;
+  color: #5c0feb;
+  padding: 10px;
+  border: 1px solid #d6e9c6;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.addUserForm, .userList, .userDetails {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.addUserForm h3, .userList h3, .userDetails h3 {
+  margin-top: 0;
+}
+
+.addUserForm input, .addUserForm button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.addUserForm button {
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+}
+
+.addUserForm button:hover {
+  background-color: #555;
+}
+
+.userList ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.userList li {
+  background-color: #f9f9f9;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.userList li button {
+  background-color: #d9534f;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.userList li button:hover {
+  background-color: #c9302c;
+}
+
+.userDetails p {
+  margin: 5px 0;
+}
+.sidebarTitle {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+.sidebarTitle .faKey {
+  margin-right: 10px;
+}

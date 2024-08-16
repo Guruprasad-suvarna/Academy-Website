@@ -49,11 +49,11 @@ const Navbar = () => {
             data-bs-toggle="dropdown"
           >
             <i class="fa-solid fa-user px-2"></i>
-            User
+            
           </button>
           <ul className="dropdown-menu dropdown-menu-light">
             <li>
-              <a href="/" className="dropdown-item">
+              <a href="/ReactAcfc" className="dropdown-item">
                 Log Out
               </a>
             </li>

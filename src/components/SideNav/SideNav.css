@@ -1,3 +1,4 @@
+
 .app-side-nav {
   position: fixed;
   width: 250px;
@@ -91,5 +92,4 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top 50px;
-
-}
+} 

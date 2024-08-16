@@ -1,3 +1,10 @@
+
+
+.file-display {
+  margin-top: 10px;
+  width: 100%; /* Adjust width as needed */
+  max-width: 800px; /* Limit maximum width */
+}
 /* container.css */
 
 
@@ -12,7 +19,14 @@
   display: flex;
   gap: 20px;
   flex-wrap: wrap; 
-  justify-content: space-between
+  justify-content: space-between;
+  position: fixed;
+  top:55%;
+  left: 570px;
+  transform: translate(-60%, -50%);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
 }
  
 .button {
@@ -34,3 +48,45 @@
   background-color: #005aab;
 }
  
+
+
+/* Project.css */
+.progress-container {
+
+  width: 100%;
+  height: 10px;
+  background-color: #e41c1c;
+  margin-top: -440px;
+  
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #4caf50;
+}
+
+
+.snippet-container {
+  max-height: 100px; /* Set the maximum height for the snippet container */
+  overflow-y: auto;  /* Enable vertical scrolling */
+  padding-right: 10px; /* Add padding to avoid content being hidden behind the scrollbar */
+  margin-left: 200px;
+}
+.snippetclr{
+  color: white;
+}
+
+
+.snippet-container::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.snippet-container {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.snippet-container::-webkit-scrollbar {
+  display: none;  /* Safari and Chrome */
+}

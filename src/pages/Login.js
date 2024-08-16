@@ -34,6 +34,12 @@ const Login = () => {
     if (username === "Acfc@hexaware.com" && password === "Acfc@123") {
       // Successful login
       navigate("/dashboard");
+
+        // navigate("/admin-dashboard");
+
+
+
+
     } else {
       setError("Invalid Username or Password!");
     }
@@ -45,6 +51,7 @@ const Login = () => {
  
   return (<div className="login-container" style={{ backgroundImage: "url('https://github.com/Guruprasad-suvarna/Tensai/assets/83869639/2d38245b-5512-48c8-848f-64a3dffff139')", backgroundSize: "cover", backgroundPosition: "center" }}>
 <h2>Login</h2>
+
 <form onSubmit={handleSubmit}>
 <div className="form-group">
 <label>Username:</label>
@@ -71,8 +78,20 @@ const Login = () => {
 >
 <FontAwesomeIcon icon={showPassword ? faEyeSlash : faEye} />
 </button>
+{/* <div className="form-group">
+<label>Login SSO:</label>
+<input
+            type="text"
+            value={username}
+            onChange={(e) => setUsername(e.target.value)}
+            required
+          />
+</div> */}
 </div>
 </div>
+
+
+
 <button type="submit">Login</button>
         {error && <p className="error-message">{error}</p>}
 </form>

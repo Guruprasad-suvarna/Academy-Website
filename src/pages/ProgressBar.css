@@ -1,0 +1,28 @@
+.progress-bar-container {
+  position: relative; /* Position the text container relative to this */
+ min-width: 130px;
+  height: 23px; /* Height of the progress bar container */
+  border: 1px solid #ccc; /* Border of the progress bar container */
+  border-radius: 5px; /* Border radius of the progress bar container */
+  overflow: hidden; /* Ensure the progress bar doesn't overflow */
+}
+
+.progress-bar {
+  width: 100px;
+  height: 200px;
+  background-color: #f8cb03; /* Color of the progress bar */
+  border-radius: 5px; /* Border radius of the progress bar */
+  transition: width 0.5s ease; /* Smooth transition animation */
+}
+
+.progress-bar-text {
+  position: absolute; /* Position the text absolutely within the container */
+  top: 0; /* Align the text to the top */
+  left: 0; /* Align the text to the left */
+  width: 100%; /* Take up the full width of the progress bar container */
+  height: 100%; /* Take up the full height of the progress bar container */
+  color: #080808; /* Color of the progress text */
+  font-size: 11px; /* Font size of the progress text */
+  text-align: center; /* Center align the progress text */
+  line-height: 20px; /* Center vertically */
+}

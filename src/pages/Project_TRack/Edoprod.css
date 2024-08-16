@@ -1,38 +1,11 @@
-/* Edoprod.css */
 
-.container3 {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center; /* Center items horizontally */
-}
-
-.button3 {
-  margin: 10px; /* Adjust margin as needed */
-  width: 150px;
-  height: 150px;
-  font-size: 12px;
-  background-color:#eb292a ;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.button3:hover {
-  background-color: #0056b3;
-}
-
-.file-container3 {
-  margin-top: 20px;
-}
 
 .file-display {
   margin-top: 10px;
   width: 100%; /* Adjust width as needed */
   max-width: 800px; /* Limit maximum width */
 }
-/* container.css */
+
 
 
 .container {
@@ -46,7 +19,14 @@
   display: flex;
   gap: 20px;
   flex-wrap: wrap; 
-  justify-content: space-between
+  justify-content: space-between;
+  position: fixed;
+  top:55%;
+  left: 570px;
+  transform: translate(-60%, -50%);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
 }
  
 .button {
@@ -68,3 +48,9 @@
   background-color: #005aab;
 }
  
+
+.snippet-container {
+  max-height: 100px; /* Set the maximum height for the snippet container */
+  overflow-y: auto;  /* Enable vertical scrolling */
+  padding-right: 10px; /* Add padding to avoid content being hidden behind the scrollbar */
+}

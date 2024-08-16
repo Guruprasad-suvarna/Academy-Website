@@ -1,5 +1,5 @@
 {
-  
+  "homepage": "https://Guruprasad123suvarna.github.io/ReactAcfc",
   "name": "acfc",
   "version": "0.1.0",
   "private": false,
@@ -13,6 +13,7 @@
     "axios": "^1.6.7",
     "framer-motion": "^11.0.25",
     "react": "^18.2.0",
+    "react-bootstrap-validation": "^0.1.11",
     "react-dom": "^18.2.0",
     "react-icons": "^5.0.1",
     "react-router-dom": "^6.22.2",
@@ -21,8 +22,8 @@
   },
   "scripts": {
     "start": "set PORT=8001 && react-scripts start",
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
